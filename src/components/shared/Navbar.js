@@ -34,7 +34,7 @@ const navItems = [
     },
     {
         route: "Category",
-        pathname: "/category"
+        pathname: "/categories/national"
     },
     {
         route: "News",
@@ -63,7 +63,7 @@ const Navbar = () => {
         <>
         <Header></Header>
         <AppBar position="static" sx={{backgroundColor:'#151515'}}>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <Toolbar disableGutters>
                     <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>
                         <Image src={logo} alt='logo' />
