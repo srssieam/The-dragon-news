@@ -21,6 +21,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Instagram } from "@mui/icons-material";
 import Link from "next/link";
+import Header from "./Header";
 
 const navItems = [
     {
@@ -59,6 +60,8 @@ const Navbar = () => {
 
 
     return (
+        <>
+        <Header></Header>
         <AppBar position="static" sx={{backgroundColor:'#151515'}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
@@ -133,6 +136,7 @@ const Navbar = () => {
                 </Toolbar>
             </Container>
         </AppBar>
+        </>
     );
 }
 export default Navbar;
