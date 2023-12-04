@@ -113,7 +113,7 @@ const Navbar = () => {
                             </Link>
                         ))}
                     </Box>
-                    <Box>
+                    <Box sx={{display:"flex", justifyContent:"center", flexWrap:"wrap"}}>
                         <IconButton sx={{ color: 'white'}}>
                             <FacebookIcon></FacebookIcon>
                         </IconButton>
