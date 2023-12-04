@@ -1,10 +1,21 @@
+import NationalNews from '@/components/ui/NationalNews';
+import Sidebar from '@/components/ui/Sidebar';
+import { Grid, Typography } from '@mui/material';
 import React from 'react';
 
 const HomePage = () => {
   return (
-    <div>
-      <h1 className='text-5xl text-center text-green-700 font-bold'>Welcome to dragon news home page</h1>
-    </div>
+    <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid item xs={8}>
+          <Typography variant='h4'>National News</Typography>
+          <NationalNews></NationalNews>
+        </Grid>
+        <Grid item xs={4}>
+        <Typography variant='h4'>Sylhet</Typography>
+        <Sidebar></Sidebar>
+        </Grid>
+
+      </Grid>
   );
 };
 
