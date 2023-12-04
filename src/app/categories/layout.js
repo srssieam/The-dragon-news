@@ -6,7 +6,7 @@ const CategoriesLayout = ({children}) => {
     return (
         <Box>
             <Container>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
                     <Grid item xs={3}>
                         <CategoryList></CategoryList>
                     </Grid>
